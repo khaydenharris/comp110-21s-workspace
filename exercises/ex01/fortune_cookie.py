@@ -15,7 +15,7 @@ from random import randint
 
 print("Your fortune cookie says...")
 
-fortune = randint(1,3)
+fortune = randint(1,4)
 
 if (fortune == 1):
         print("God loves you")
@@ -23,7 +23,10 @@ else:
     if (fortune == 2):
         print("You is smart, you is Kind, and you is important.")
     else:
-        print("Trust the process.")
+        if (fortune == 3):
+            print("Trust the process.")
+        else:
+            print("Have a blessed day.")
 
 print("Now, go spread positive vibes!")
 
