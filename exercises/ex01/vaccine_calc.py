@@ -25,11 +25,7 @@ Target_percent_vaccinated: int = input("Target percent vaccinated:")
 
 
 Doses_needed: int = round(int(Population) * float(0.01) * int(2) * int(Target_percent_vaccinated))
-
-
 New_doses_needed: int = round(int(Doses_needed) - int(Doses_administered))
-
-
 Number_of_days: int = round(int(New_doses_needed) / int(Doses_per_day)) 
 
 
@@ -38,9 +34,7 @@ Number_of_days: int = round(int(New_doses_needed) / int(Doses_per_day))
 
 
 today: datetime = datetime.today()
-
 future_date: timedelta = timedelta(int(Number_of_days))
-
 future: datetime = today + future_date
 
 
