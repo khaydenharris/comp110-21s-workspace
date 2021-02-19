@@ -23,6 +23,5 @@ def tar_heels(ripXXI: int) -> str:
                 return("CAROLINA")
 
 
-
 if __name__ == "__main__":
     main()

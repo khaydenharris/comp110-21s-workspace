@@ -13,7 +13,7 @@ def main() -> None:
 
 
 def fortune_cookie() -> str:
-    """Function that produces random fortunes"""
+    """Function that produces random fortunes."""
     fortune = randint(1, 4)
     if (fortune == 1):
         return("God loves you.")
@@ -25,7 +25,6 @@ def fortune_cookie() -> str:
                 return("Trust the process.")
             else:
                 return("Have a blessed day.")
-                
 
 
 # Python Idiom for "starting" the program when run as a module.
