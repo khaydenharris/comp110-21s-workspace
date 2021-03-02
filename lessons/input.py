@@ -1,7 +1,16 @@
 """A program to demonstrate user input and variables."""
+from random import randint
 
-name: str = input("Who are you? ")
+Random_roll = str(randint(1, 2))
+def main() -> None:
+    die()
 
-print("Wow, " + name + ", you rock!")
-print(name + " have a great day!")
+def die() -> None:
+    global Random_roll
+    Random_roll = str(randint(1, 2))
 
+
+
+
+    if __name__ == "__main__":
+        main()
