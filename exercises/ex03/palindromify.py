@@ -10,16 +10,17 @@ def main() -> None:
     
 
 def palindromify(x: str, y: bool) -> str:
+    """Palindrome Function."""
     palindrome: str = str(x)
-    if y == True:
-        count: int = -1
-        while count >= (-len(x)):
+    if y is True:
+        count: int = len(x) - 1
+        while count >= 0:
             palindrome += x[count]
             count -= 1
         return palindrome
-    if y == False:
-        count: int = -2
-        while count >= (-len(x)):
+    if y is False:
+        count: int = len(x) - 2
+        while count >= 0:
             palindrome += x[count]
             count -= 1
     return palindrome

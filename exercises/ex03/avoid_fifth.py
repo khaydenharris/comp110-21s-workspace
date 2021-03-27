@@ -9,6 +9,7 @@ def main() -> None:
 
 
 def avoid_fifth(letters: str) -> str:
+    """Erases a letter from sentence."""
     no_e_string: str = ""
     for item in letters:
         if item == "e" or item == "E":
@@ -17,9 +18,6 @@ def avoid_fifth(letters: str) -> str:
             no_e_string += item
     return no_e_string
             
-
-
-
 
 if __name__ == "__main__":
     main()
